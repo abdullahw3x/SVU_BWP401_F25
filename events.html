@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="منصة أنشطة وفعاليات الجامعة الافتراضية السورية">
+        <title>جميع الفعاليات | دليل الفعاليات</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+<body>
+    <header class="top">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="LOGO">
+            
+        </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">جميع الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">حول الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+    <main>
+        <section class="pagehero">
+            <div class="container">
+                <h1>جميع الأنشطة، من صفحة واحدة.</h1>
+                <p>اختر ما يناسب وقتك وميولك من التجارب.</p>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="filters">
+                    <div class="heading">
+                        <div>
+                            <label>جرّب شيئاً لم تعرفه</label>
+                            <h2>اعثر على نشاطك</h2>
+                        </div>
+                        <button class="btn btn-light" id="reset">تصفير الفلاتر ↺</button>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-4">
+                            <label class="form-label" for="q">بحث نصي</label>
+                            <input id="q" class="form-control" placeholder="اسم النشاط أو بعض وصفه...">
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <label class="form-label" for="cat">النوع</label>
+                            <select id="cat" class="form-select">
+                                <option value="">الكل</option>
+                                <option value="culture">ثقافة ومعارف</option>
+                                <option value="sport">رياضة ونشاطات</option>
+                                <option value="music">فنون وموسيقى</option>
+                                <option value="social">طلاب ومجتمع</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <label class="form-label" for="date">الموعد</label>
+                            <select id="date" class="form-select">
+                                <option value="">جميع المواعيد</option>
+                                <option value="2026-10">تشرين الأول</option>
+                                <option value="2026-11">تشرين الثاني</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <label class="form-label" for="loc">المكان</label>
+                            <select id="loc" class="form-select">
+                                <option value="">جميع المدن</option>
+                                <option>دمشق</option>
+                                <option>حمص</option>
+                                <option>حلب</option>
+                                <option>اللاذقية</option>
+                                <option>طرطوس</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 d-flex align-items-end">
+                            <button id="search" class="btn btn-warm w-100">بحث</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultbar">
+                    <b id="count" aria-live="polite">عدد الأنشطة: 6</b>
+                </div>
+                <div class="row g-4" id="eventsGrid">
+                    <div class="col-md-6 col-lg-4 event-item" data-title="ورشة تطوير المهارات الرقمية" data-category="culture" data-date="2026-10-28" data-location="دمشق" data-search="ورشة تطوير المهارات الرقمية خطوات تطبيقية تعرّفك بأدوات التقنية وتقوّي مهاراتك الرقمية. ثقافة ومعارف">
+                        <article class="cardx">
+                            <img src="assets/images/cardx_1.png" alt="ورشة تطوير المهارات الرقمية">
+                            <div class="pad">
+                                <span class="badge tag-culture">ثقافة ومعارف</span>
+                                <h3>ورشة تطوير المهارات الرقمية</h3>
+                                <p>خطوات تطبيقية تعرّفك بأدوات التقنية وتقوّي مهاراتك الرقمية.</p>
+                                <div class="meta">📅 28 تشرين الأول · 📍 دمشق</div>
+                                <a class="btn btn-outline-primary w-100 mt-3" href="event.html?id=1">عرض التفاصيل</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 event-item" data-title="ملتقى الطلاب الجامعي" data-category="social" data-date="2026-10-30" data-location="دمشق" data-search="ملتقى الطلاب الجامعي فضاء مفتوح للتعارف وتبادل الأفكار والمبادرات الطلابية. طلاب ومجتمع">
+                        <article class="cardx">
+                            <img src="assets/images/cardx_3.png" alt="ملتقى الطلاب الجامعي">
+                            <div class="pad">
+                                <span class="badge tag-social">طلاب ومجتمع</span>
+                                <h3>ملتقى الطلاب الجامعي</h3>
+                                <p>فضاء مفتوح للتعارف وتبادل الأفكار والمبادرات الطلابية.</p>
+                                <div class="meta">📅 30 تشرين الأول · 📍 دمشق</div>
+                                <a class="btn btn-outline-primary w-100 mt-3" href="event.html?id=2">عرض التفاصيل</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 event-item" data-title="سهرة موسيقية شبابية" data-category="music" data-date="2026-11-02" data-location="حمص" data-search="سهرة موسيقية شبابية ليلة فنية تلفت الأنظار إلى المواهب والإبداعات. فنون وموسيقى">
+                        <article class="cardx">
+                            <img src="assets/images/cardx_2.png" alt="سهرة موسيقية شبابية">
+                            <div class="pad">
+                                <span class="badge tag-music">فنون وموسيقى</span>
+                                <h3>سهرة موسيقية شبابية</h3>
+                                <p>ليلة فنية تلفت الأنظار إلى المواهب والإبداعات.</p>
+                                <div class="meta">📅 02 تشرين الثاني · 📍 حمص</div>
+                                <a class="btn btn-outline-primary w-100 mt-3" href="event.html?id=3">عرض التفاصيل</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 event-item" data-title="حلقة نقاش حول الابتكار" data-category="culture" data-date="2026-11-05" data-location="اللاذقية" data-search="حلقة نقاش حول الابتكار نقاش حر حول الأفكار القادرة على إحداث الفرق. ثقافة ومعارف">
+                        <article class="cardx">
+                            <img src="assets/images/cardx_4.png" alt="حلقة نقاش حول الابتكار">
+                            <div class="pad">
+                                <span class="badge tag-culture">ثقافة ومعارف</span>
+                                <h3>حلقة نقاش حول الابتكار</h3>
+                                <p>نقاش حر حول الأفكار القادرة على إحداث الفرق.</p>
+                                <div class="meta">📅 05 تشرين الثاني · 📍 اللاذقية</div>
+                                <a class="btn btn-outline-primary w-100 mt-3" href="event.html?id=4">عرض التفاصيل</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 event-item" data-title="يوم التحديات الرياضية" data-category="sport" data-date="2026-11-07" data-location="حلب" data-search="يوم التحديات الرياضية عمل جماعي يدفع نحو الحركة ويجسّد روح الفريق. رياضة ونشاطات">
+                        <article class="cardx">
+                            <img src="assets/images/cardx_5.png" alt="يوم التحديات الرياضية">
+                            <div class="pad">
+                                <span class="badge tag-sport">رياضة ونشاطات</span>
+                                <h3>يوم التحديات الرياضية</h3>
+                                <p>عمل جماعي يدفع نحو الحركة ويجسّد روح الفريق.</p>
+                                <div class="meta">📅 07 تشرين الثاني · 📍 حلب</div>
+                                <a class="btn btn-outline-primary w-100 mt-3" href="event.html?id=5">عرض التفاصيل</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 event-item" data-title="مبادرة يد الخير" data-category="social" data-date="2026-11-09" data-location="طرطوس" data-search="مبادرة يد الخير نشاط طلابي تطوعي يخدم السكان المحيطين. طلاب ومجتمع">
+                        <article class="cardx">
+                            <img src="assets/images/cardx_6.png" alt="مبادرة يد الخير">
+                            <div class="pad">
+                                <span class="badge tag-social">طلاب ومجتمع</span>
+                                <h3>مبادرة يد الخير</h3>
+                                <p>نشاط طلابي تطوعي يخدم السكان المحيطين.</p>
+                                <div class="meta">📅 09 تشرين الثاني · 📍 طرطوس</div>
+                                <a class="btn btn-outline-primary w-100 mt-3" href="event.html?id=6">عرض التفاصيل</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="empty" class="empty d-none">
+                    <h3>ما من أنشطة تعادل بحثك</h3>
+                    <p>عدّل كلمات بحثك أو معايير التصفية.</p>
+                </div>
+            </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container">
+                    <div><a href="events.html">الفعاليات</a> 
+                        · <a href="about.html">حول الدليل</a>
+                        · <a href="contact.html">تواصل معنا</a>
+                        </div>
+                        <small>© 2026 منصة أنشطة الجامعة الافتراضية </small>
+                    </div>
+                </footer>
+                <button id="topBtn" aria-label="الانتقال إلى أعلى الصفحة">↑</button>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+                </script> <script src="assets/js/main.js"> </script>
+    </body>
